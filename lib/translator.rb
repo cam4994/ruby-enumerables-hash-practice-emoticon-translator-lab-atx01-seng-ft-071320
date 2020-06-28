@@ -11,6 +11,9 @@ def load_library(file)
   hash
 end
 
+x = load_library("./lib/emoticons.yml")
+puts x 
+
 def get_japanese_emoticon
   # code goes here
 end
