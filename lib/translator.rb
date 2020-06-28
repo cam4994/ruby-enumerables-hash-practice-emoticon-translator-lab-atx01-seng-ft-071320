@@ -20,7 +20,10 @@ def get_japanese_emoticon(file, emoji)
     end 
   end 
   if emoticon == ""
-    return 
+    return "Sorry, that emoticon was not found"
+  else 
+    return emoticon 
+  end 
 end
 
 def get_english_meaning(file, emoji)
