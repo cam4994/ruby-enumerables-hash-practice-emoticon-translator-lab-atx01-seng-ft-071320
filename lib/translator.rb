@@ -1,7 +1,7 @@
 require "yaml"
 
 def load_library(file)
-  emoticons = YAML.load_file('emoticons.yml')
+  emoticons = YAML.load_file(file)
   hash = {}
   emoticons.each do |key, values|
     hash[key] = {}
