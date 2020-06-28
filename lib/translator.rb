@@ -11,8 +11,14 @@ def load_library(file)
   hash
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(file, emoji)
+  hash = load_library(file)
+  emoticon = ""
+  hash.each do |key, inner_hash|
+    if inner_hash[:english] == emoji 
+      emoticon = inner_hash[:japanese]
+    end 
+  end 
 end
 
 def get_english_meaning(file, emoji)
