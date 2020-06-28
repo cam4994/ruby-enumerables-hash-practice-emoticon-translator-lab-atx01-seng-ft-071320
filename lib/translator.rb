@@ -19,6 +19,8 @@ def get_japanese_emoticon(file, emoji)
       emoticon = inner_hash[:japanese]
     end 
   end 
+  if emoticon == ""
+    return 
 end
 
 def get_english_meaning(file, emoji)
