@@ -17,5 +17,14 @@ end
 
 def get_english_meaning(file, emoji)
   hash = load_library(file)
-  
+  english_meaning = ""
+  hash.each do |key, inner_hash|
+    inner_hash.each do |language, emoticon|
+      if emoticon == emoji 
+        english_meaning = key 
+      end 
+    end 
+  end 
+  if english_meaning = ""
+        
 end
